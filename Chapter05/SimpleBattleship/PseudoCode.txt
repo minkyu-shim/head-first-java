@@ -1,0 +1,27 @@
+SimpleBattleShip.java pseudocode
+
+DECLARE a public class called SimpleBattleShip
+
+DECLARE an int array to hold the location cells. Call it locationCells
+DECLARE an int numOfHits to hold number of attempts. SET numOfHits to 0
+
+DECLARE a checkYourself method that takes an int for user's guess,
+		checks it and returns "hit", "miss" or "kill"
+DECLARE a setLocationCells setter method that takes an int array
+
+METHOD String checkYourself(int userGuess)
+	GET the user guess as an int parameter
+	REPEAT with each of the location cells in the int array
+		// COMPARE the user guess to the location cell
+		IF user guess == locationCells
+			INCREMENT the numberOfHits
+			// FIND OUT if it was the last location cell
+			IF number of hits is 3, RETURN "kill" as the result
+			ELSE it was not a kill, so RETURN "hit"
+			END IF
+		ELSE the user guess did not match, so RETURN "miss"
+		END IF
+	END REPEAT
+END METHOD
+
+METHOD 
