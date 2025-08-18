@@ -1,0 +1,5 @@
+If class A has a B
+	B is an instance variable of class A
+
+If class A is a B
+	A extends B

@@ -25,6 +25,7 @@ public class Startup {
 				result = "hit";
 			}
 		}
+		return result;
 	}
 	
 	
